@@ -3,6 +3,7 @@ class Core
 	El = {}
 	Count = 0;
 
+	
 	init(Selectors)
 	{
 		Selectors.forEach((elem) => this.El[elem.key] = document.querySelector(elem.id));
