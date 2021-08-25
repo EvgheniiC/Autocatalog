@@ -1,0 +1,1 @@
+Core.renderAll('#app', [NavBar, Core.getRoute()]);

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+	<style>
+		
+		p,
+		label {
+		    font: 1rem 'Fira Sans', sans-serif;
+		}
+
+		input {
+		    margin: .4rem;
+		    height:20px; 
+		    width:80px;
+		}
+
+		#form {
+
+		    border: 1px solid black;
+		    padding: 1.5%;
+		    text-align: center;
+		    
+
+		}
+
+		.notify
+		{
+			margin: auto;
+			width: 30%;
+			padding: 20px;
+			background: rgba(30, 150, 80, .9);
+			color: #fff;
+			border-radius: 8px;
+			position: fixed; bottom: 20px; right: 20px;
+			transform: translateX(150%);
+			transition: all .8s;
+		}
+
+		.notify_show
+		{
+			transform: translateX(0%);
+		}
+
+
+		.product_img
+		{
+			width: 48px;
+			height: 48px;
+			border: 1px solid #aaa;
+			border-radius: 8px;
+			overflow: hidden;
+		}
+
+		.product_img img 
+		{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.price {
+			  text-align: right;
+		}
+
+		.badge {
+		  padding-left: 9px;
+		  padding-right: 9px;
+		  -webkit-border-radius: 9px;
+		  -moz-border-radius: 9px;
+		  border-radius: 9px;
+		}
+
+/*		#lblCartCount {
+		    font-size: 12px;
+		    background: #ff0000;
+		    color: #fff;
+		    padding: 0 5px;
+		    vertical-align: top;
+		}
+*/
+
+		.badge:after{
+		content:attr(value);
+		font-size:12px;
+		background: red;
+		border-radius:50%;
+		padding:3px;
+		position:relative;
+		left:-8px;
+		top:-10px;
+		opacity:0.9;
+		}
+
+	</style>
+
+	<div id="app"></div>
+
+	<script src="Model.js"></script>
+
+	<script src="Core.js"></script>
+
+	<script src="components/NavBar.js"></script>
+	<script src="components/Home.js"></script>
+	<script src="components/Filter.js"></script>
+	<script src="components/Search.js"></script>
+	<script src="components/Catalog.js"></script>
+	<script src="components/Cart.js"></script>
+	<script src="components/NotFound.js"></script>
+	<script src="components/Form.js"></script>
+	<script src="components/Table.js"></script>
+	<script src="components/Notify.js"></script>
+	<script src="components/Count.js"></script>
+
+
+
+	
+	<script src="app.js"></script>
+	
+</body>
+</html>
